@@ -859,12 +859,15 @@ img {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    position: relative;
 }
  .from-field input{ 
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
     height: 40px;
+    transition:  border-color var(--anim-fast);
+    padding-left: 42px;
 }
 .from-field label{
     font-family: 'Roboto';
@@ -882,6 +885,7 @@ img {
     box-sizing: border-box;
     border-radius: 4px;
     height: 120px;
+    transition:  border-color var(--anim-fast);
 }
 .form-comment{
     padding-left: 16px;
@@ -947,6 +951,30 @@ img {
 .policy{
     color: var(--link-color);
 }
+
+.form-icon{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
+    transition: fill var(--anim-fast);
+}
+.from-field input:hover,.from-field input:focus{
+    border-color: var(--link-color);
+    transition:  border-color var(--anim-fast);
+}
+.from-field input:hover ~.form-icon, .from-field input:focus ~.form-icon{
+    fill:var(--link-color);
+    transition: fill var(--anim-fast);
+}
+.from-field textarea:hover{
+    border-color: var(--link-color);
+    transition:  border-color var(--anim-fast);
+}
+
+
+/* форма футера */
 .form-footer{
     margin-left: 93px;
 }

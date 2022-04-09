@@ -423,10 +423,16 @@
             </ul>
 
             </div>
-            <form>
-                <p>Подпишитесь на рассылку</p>
-                <input type="email" name="mail" id="mail" placeholder="E-mail"/>
-                <button type="submit">Подписаться</button>
+            <form class="form-footer">
+                <p class="form-footer-title">Подпишитесь на рассылку</p>
+                <div class="from-footer-field">
+                    <input type="email" name="mail" id="mail" placeholder="E-mail"/>
+                    <button type="submit" class="form-footer-button">Подписаться
+                        <svg class="form-footer-icon">
+                            <use href="./images/symbol-defs.svg#telegram"></use>
+                        </svg>
+                    </button>
+                </div>
             </form>
         </div>
     </footer>

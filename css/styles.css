@@ -833,7 +833,111 @@ img {
     transform: translateY(0);
 }
 /* Формы */
+.form{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.title-form{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
 
+    color: #212121;
+
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+.from-field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+ .from-field input{ 
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px;
+}
+.from-field label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color:var(--primary-text-color);
+    margin-bottom: 4px;
+}
+.from-field textarea{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 120px;
+}
+.from-field textarea::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+
+    padding-left: 16px;
+    padding-top: 12px;
+
+}
+.form-button{
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 55px 10px 56px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.form-button:hover{
+    background: #188CE8;
+}
+.from-field-checkbox{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+   
+}
+.from-field-checkbox input{
+    width: 16px;
+    height: 15px;
+    background: #212121;
+}
+.from-field-checkbox label{
+    margin-left: 9px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color:var(--primary-text-color);
+
+}
+.policy{
+    color: var(--link-color);
+}
     
 
 

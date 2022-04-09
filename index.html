@@ -60,19 +60,29 @@
                             <use href="./images/symbol-defs.svg#icon-x"></use>
                         </svg>
                     </button>
-                    <form>
-                        <p>Оставьте свои данные, мы вам перезвоним</p>
-                        <label for="name">Имя</label>
-                        <input type="text" name="name" id="name"/>
-                        <label for="tel">Телефон</label>
-                        <input type="tel" name="tel" id="tel"/>
-                        <label for="mail">Почта</label>
-                        <input type="email" name="mail" id="mail"/>
-                        <label for="comment">Коментарий</label>
-                        <textarea name="comment" id="comment" rows="1"></textarea>
-                        <input type="checkbox" name="policy" id="policy"/>
-                        <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-                        <button type="submit">Отправить</button>
+                    <form class="form">
+                        <p class="title-form">Оставьте свои данные, мы вам перезвоним</p>
+                        <div class="from-field">
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" id="name"/>
+                        </div>
+                        <div class="from-field">
+                            <label for="tel">Телефон</label>
+                            <input type="tel" name="tel" id="tel"/>
+                        </div>
+                        <div class="from-field">
+                            <label for="mail">Почта</label>
+                            <input type="email" name="mail" id="mail"/>
+                        </div>
+                        <div class="from-field">
+                            <label for="comment">Коментарий</label>
+                            <textarea name="comment" id="comment" rows="1" placeholder="Введите текст"></textarea>
+                        </div>
+                        <div class="from-field-checkbox">
+                            <input type="checkbox" name="policy" id="policy" />
+                            <label for="policy">Соглашаюсь с рассылкой и принимаю <span class="policy">Условия договора</span></label>
+                        </div>
+                        <button type="submit" class="form-button">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -415,8 +425,7 @@
             </div>
             <form>
                 <p>Подпишитесь на рассылку</p>
-                <label for="mail">Почта</label>
-                <input type="email" name="mail" id="mail"/>
+                <input type="email" name="mail" id="mail" placeholder="E-mail"/>
                 <button type="submit">Подписаться</button>
             </form>
         </div>

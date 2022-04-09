@@ -883,6 +883,11 @@ img {
     border-radius: 4px;
     height: 120px;
 }
+.form-comment{
+    padding-left: 16px;
+    padding-top: 12px;
+
+}
 .from-field textarea::placeholder{
     font-family: 'Roboto';
     font-style: normal;
@@ -892,10 +897,6 @@ img {
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
-
-    padding-left: 16px;
-    padding-top: 12px;
-
 }
 .form-button{
     background: #2196F3;

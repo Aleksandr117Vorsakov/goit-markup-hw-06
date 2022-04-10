@@ -88,8 +88,11 @@
                             <textarea class="form-comment" name="comment" id="comment" rows="1" placeholder="Введите текст"></textarea>
                         </div>
                         <div class="from-field-checkbox">
-                            <input type="checkbox" name="policy" id="policy" />
-                            <label for="policy">Соглашаюсь с рассылкой и принимаю <span class="policy">Условия договора</span></label>
+                            <input class="checkbox" type="checkbox" name="policy" id="policy" />
+                            <label for="policy">Соглашаюсь с рассылкой и принимаю <a class="policy" href="">Условия договора</a></label>
+                            <svg class="checkbox-icon-svg" width="16"height="15">
+                                <use href="./images/symbol-defs.svg#yes"></use>
+                            </svg>
                         </div>
                         <button type="submit" class="form-button">Отправить</button>
                     </form>

@@ -939,7 +939,10 @@ textarea {
 }
 
 .from-field-checkbox label{
-    margin-left: 36px;
+     position: relative; 
+     margin-left: 36px; 
+    display: flex;
+    align-items: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -951,13 +954,13 @@ textarea {
 
 }
 .checkbox{
-    -webkit-appearance: none;
-    appearance: none;
-    position: absolute;
+    appearance: none; 
+    position: absolute; 
 }
 
 .checkbox-icon-svg{
-    position: absolute;
+     position: absolute; 
+     left: -36px;
     width: 16px;
     height: 15px;
     border: 2px solid #2a2a2a;
@@ -965,13 +968,12 @@ textarea {
     fill:var(--main-background-color);
     margin-left: 12px;
 }
-.checkbox:checked ~ .checkbox-icon-svg{
-    fill: var(--link-color);
-    border-color: var(--link-color);
-    background-color:var(--link-color) ;
-    background-origin: border-box;
-    background-size: contain;
-
+.checkbox:checked ~ .checkbox-icon-svg{ 
+    background fill : var(--link-color);
+    border-color:var(--link-color);
+    background-color:var(--link-color);
+    background-origin :border-box;
+    background-size :contain;
 }
 
 .policy{

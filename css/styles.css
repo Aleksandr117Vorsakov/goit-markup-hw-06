@@ -287,6 +287,7 @@ margin-left: auto;
      position: absolute; 
     top: 8px;
     right: 8px;
+    padding: 0;
     border-radius: 50%;
     background-color: #fff;
     width: 30px;
@@ -297,6 +298,11 @@ margin-left: auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .icon-button-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.5px;
+    padding-left: 3.5px;
     width: 18px;
     height: 18px;
     transition: fill var(--anim-fast);
@@ -979,12 +985,18 @@ textarea {
 .policy{
     color: var(--link-color);
     margin-right: 11px;
+    margin-left: 4px;
+    text-decoration: underline;
 }
 
 .form-icon{
+    display: flex;
+    align-items: center;
+    justify-items: center;
     width: 18px;
+    padding-top: 3px;
     height: 18px;
-    position: absolute;
+    position: absolute; 
     left: 12px;
     bottom: 11px;
     transition: fill var(--anim-fast);
@@ -1029,9 +1041,12 @@ textarea {
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); 
     border-radius: 4px;
     background: #2F303A;
+    color: var(--primary-text-color);
+    padding-left: 16px;
+    outline: transparent;
 }
 .form-footer-button{
     background: #2196F3;
